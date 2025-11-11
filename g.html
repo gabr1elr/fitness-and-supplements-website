@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="StyleSheet" href="css.css" type="text/css">
+  <title>Fitness si suplimente</title>
+  <script>
+    function showSection(sectionId) {
+      var sections = ["home", "portofolio", "contact"];
+      for (var i = 0; i < sections.length; i++) {
+        if (sections[i] === sectionId) {
+          document.getElementById(sections[i]).style.display = "block";
+        } else {
+          document.getElementById(sections[i]).style.display = "none";
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Fitness si suplimente</h1>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showSection('home')">Home</a>
+    <a href="#" onclick="showSection('portofolio')">Portofolio</a>
+    <a href="#" onclick="showSection('contact')">Contact</a>
+  </nav>
+
+  <div class="container" id="home">
+    <h2>Home</h2>
+    <p>Acesta este un website dedicat fitness-ului si suplimentelor.</p>
+    <p>Fitness-ul reprezinta o conditie de sanatate a unui individ, iar pe acest site va vom explica cum sa ajungeti in cea mai buna conditie fizica a voastra. De asemenea, va vom prezenta anumite suplimente care va pot ajuta sa va indepliniti scopurile, chiar daca nu incurajam uzul acestora, doar le vom prezenta.</p>
+	<p> Pe acest site va vom arata cum sa ajungeti in cea mai buna stare fizica folosind greutati, precum haltere sau alte tipuri de exercitii.
+	<br>
+	<img src="images.jpg" alt="Haltera">
+	<P align=center>Haltera</p>
+  </div>
+
+  <div class="container" id="portofolio" style="display: none;">
+    <h2>Portofolio</h2>
+    <p>Pentru a ajunge in cea mai buna conditie fizica, va recomandam 3 exercitii.</p>
+	<ul class="var A">Lista exercitiilor
+	<br>
+	<br>
+	<li> Tractiunea </li>
+	<p>Primul exercitiu este tractiunea.</p>
+	<img src="tr.jpg" alt="Tractiune">
+	<p>Tractiunea este un exercitiu in care tragi corpul in sus pe o bara suspendata, folosind muschii spatelui si ai bicepsilor, pentru a lucra grupurile musculare din spate. </p>
+	<br>
+	<br>
+	<li> Impinsul din culcat </li>
+	<p>Al doilea exercitiu este impinsul la piept.</p>
+	<img src="bp.jpg" alt="Impinsul la piept">
+	<p> Impinsul din culcat este un exercitiu de forta in care, in pozitie culcat pe spate, impingi o greutate (de obicei o bara cu discuri) in sus, implicand mai ales muschii pieptului, umerilor si tricepsilor.</p>
+	<br>
+	<br>
+	<li> Genuflexiunea </li>
+	<p>Al treilea exercitiu este genuflexiunea, unul din cele mai importante, pe care orice atlet ar trebui sa il practice.</p>
+	<img src="sq.jpg" alt="Genuflexiunea">
+	<p> Genuflexiunea este un exercitiu de forta in care te apleci in genunchi, coborand trunchiul in jos, pentru a lucra muschii coapselor, feselor si gambei. </p>
+	</ul>
+    <p>Proteina este un nutrient esential pentru construirea si repararea tesuturilor din organism, inclusiv pentru cresterea si refacerea muschilor. Este folosita adesea ca supliment alimentar de catre sportivi si culturisti pentru a sustine dezvoltarea musculara si recuperarea.</p>
+	<br>
+	<p> Creatina este o substanta produsa in mod natural in organism si este implicata in furnizarea de energie pentru contractia musculara. Suplimentarea cu creatina poate spori performanta sportiva, cresterea musculara, forta si rezistenta.</p>
+	<br>
+	<p>Pre-antrenamentul este un supliment alimentar conceput pentru a imbunatati performanta si rezistenta in timpul antrenamentelor fizice. Contine de obicei ingrediente precum stimulente, aminoacizi, vitamine si minerale care pot spori energie, concentrare, pomparea muschilor si rezistenta in timpul antrenamentelor.</p>
+	<br>
+	<p>Este important sa consulti un specialist in nutritie sau medicul tau inainte de a lua suplimente alimentare si sa urmezi instructiunile de utilizare recomandate pentru fiecare produs.</p>
+  </div>
+
+  <div class="container" id="contact" style="display: none;">
+    <h2>Contact</h2>
+    <p>Numele: Rusănescu Gabriel, Papuc Tudor-Andrei si Sfiraiala Dumitru</p>
+    <p>Informatii unde acestia pot fi gasiti: CNMV, Clasa 10C, Bucuresti, Sector 2.</p>
+  </div>
+
+  <footer>
+    <p>© MAI-IUNIE 2023 FITNESS/CNMV</p>
+  </footer>
+</body>
+</html>
